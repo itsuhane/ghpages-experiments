@@ -1,0 +1,7 @@
+encoding: utf-8
+language: en-us
+
+# Site Information
+title:    ghpages-experiments
+url:      https://itsuhane.github.io  # <protocol>://<domain name>
+baseurl:  /ghpages-experiments        # /<root url>
