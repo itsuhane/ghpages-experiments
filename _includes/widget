@@ -1,6 +1,10 @@
 {% if include.widgets %}
-test
 {% for widget in include.widgets %}
-for
+{% case widget.type %}
+{% when 'text' %}
+{{ widget.content }}
+{% else %}
+{{ widget.content }}
+{% endcase %}
 {% endfor %}
 {% endif %}
