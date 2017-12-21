@@ -3,7 +3,7 @@
     {% case widget.type %}
       {% when 'container' %}
       <div>
-        {{ widget.content }}
+        {% include widget widgets=widget.widgets %}
       </div>
       {% when 'text' %}
         {{ widget.content }}
