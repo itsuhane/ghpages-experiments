@@ -1,12 +1,18 @@
 ---
 widgets:
   - type: container
-    content: >
-      multi-line
-      test
+    widgets:
+      - type: container
+        widgets:
+          - type: text
+            content: test1
+      - type: container
+        widgets:
+          - type: text
+            content: test2
+  - type: text
+    content: testA
 ---
 {% if page.widgets %}
-{% for widget in page.widgets %}
-{{ widget.content }}
-{% endfor %}
+{% include widget widgets=page.widgets %}
 {% endif %}
