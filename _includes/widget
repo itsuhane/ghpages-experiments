@@ -1,10 +1,14 @@
 {% if include.widgets %}
-{% for widget in include.widgets %}
-{% case widget.type %}
-{% when 'text' %}
-{{ widget.content }}
-{% else %}
-{{ widget.content }}
-{% endcase %}
-{% endfor %}
+  {% for widget in include.widgets %}
+    {% case widget.type %}
+      {% when 'container' %}
+      <div>
+        {{ widget.content }}
+      </div>
+      {% when 'text' %}
+        {{ widget.content }}
+      {% else %}
+        {{ widget.content }}
+    {% endcase %}
+  {% endfor %}
 {% endif %}
