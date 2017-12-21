@@ -1,3 +1,12 @@
 ---
+widgets:
+  - type: container
+    content: >
+      multi-line
+      test
 ---
-{{ site.title }}
+{% if page.widgets %}
+{% for widget in page.widgets %}
+{{ widget.content }}
+{% endfor %}
+{% endif %}
