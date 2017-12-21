@@ -1,5 +1,1 @@
-{% if include.widgets %}
-  {% for widget in include.widgets %}
-    {{ widget.content }}
-  {% endif %}
-{% endif %}
+test
