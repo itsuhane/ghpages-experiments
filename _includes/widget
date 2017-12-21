@@ -1,3 +1,6 @@
 {% if include.widgets %}
-{{ include.widgets }}
+test
+{% for widget in include.widgets %}
+for
+{% endfor %}
 {% endif %}
