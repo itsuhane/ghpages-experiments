@@ -17,7 +17,9 @@ widgets:
 <html>
   <head></head>
   <body>
-  {% include widget widgets=page.widgets %}
-  <p>{{ site.gs }}</p>
+    {% capture site.gs %}
+    {% include widget widgets=page.widgets %}
+    {% endcapture %}
+    {{ site.gs }}
   </body>
 </html>
