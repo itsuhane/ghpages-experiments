@@ -5,3 +5,6 @@ language: en-us
 title:    ghpages-experiments
 url:      https://itsuhane.github.io  # <protocol>://<domain name>
 baseurl:  /ghpages-experiments        # /<root url>
+
+# Some Global Variable
+gs:       ''
